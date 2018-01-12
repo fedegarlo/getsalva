@@ -11,8 +11,8 @@ var ipaddress = process.env.HOST || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 app.configure(function() {
     var cacheTime = 0;
     app.use(express.cookieParser());
-    app.use(express.bodyParser()); 
-    app.use(express.static(path.join(__dirname, 'public'), { maxAge: cacheTime }));
+    app.use(express.bodyParser());
+    app.use(express.static(path.join(__dirname, 'public/index.html'), { maxAge: cacheTime }));
 });
 
 
