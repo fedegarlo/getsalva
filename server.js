@@ -12,13 +12,10 @@ app.configure(function() {
     var cacheTime = 0;
     app.use(express.cookieParser());
     app.use(express.bodyParser());
-    app.use(express.static(path.join(__dirname, 'public/index.html'), { maxAge: cacheTime }));
+    app.use(express.static(path.join(__dirname, 'public'), { maxAge: cacheTime }));
 });
 
-
-app.get('/', function(request, response) {
-    response.render('index.html');
-});
+app.use((req, res)=>res.sendfile(__dirname + '/public/index.html'));
 
 server.listen(port, ipaddress);
 console.log('Listening  to  port ' + port);
