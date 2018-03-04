@@ -26,8 +26,9 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__help_help_component__ = __webpack_require__("../../../../../src/app/help/help.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__ = __webpack_require__("../../../../../src/app/conditions/conditions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -40,11 +41,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'help', component: __WEBPACK_IMPORTED_MODULE_3__help_help_component__["a" /* HelpComponent */] },
-    { path: 'product/:id', component: __WEBPACK_IMPORTED_MODULE_4__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */] },
-    { path: 'app', component: __WEBPACK_IMPORTED_MODULE_5__get_app_get_app_component__["a" /* GetAppComponent */] },
+    { path: 'conditions', component: __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__["a" /* ConditionsComponent */] },
+    { path: 'product/:id', component: __WEBPACK_IMPORTED_MODULE_5__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */] },
+    { path: 'app', component: __WEBPACK_IMPORTED_MODULE_6__get_app_get_app_component__["a" /* GetAppComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
 ];
@@ -131,12 +134,13 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__help_help_component__ = __webpack_require__("../../../../../src/app/help/help.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__hero_service__ = __webpack_require__("../../../../../src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__message_service__ = __webpack_require__("../../../../../src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__conditions_conditions_component__ = __webpack_require__("../../../../../src/app/conditions/conditions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hero_service__ = __webpack_require__("../../../../../src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__message_service__ = __webpack_require__("../../../../../src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -156,7 +160,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_11__environments_environment__["a" /* environment */].production) {
+
+if (__WEBPACK_IMPORTED_MODULE_12__environments_environment__["a" /* environment */].production) {
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* enableProdMode */])();
 }
 var AppModule = (function () {
@@ -168,19 +173,80 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_component__["a" /* DashboardComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__help_help_component__["a" /* HelpComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__get_app_get_app_component__["a" /* GetAppComponent */]
+                __WEBPACK_IMPORTED_MODULE_6__conditions_conditions_component__["a" /* ConditionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__get_app_get_app_component__["a" /* GetAppComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_10__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_11__angular_common_http__["b" /* HttpClientModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_8__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_9__message_service__["a" /* MessageService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_9__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_10__message_service__["a" /* MessageService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/conditions/conditions.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/conditions/conditions.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-7\">\n                <div class=\"header-content\">\n                    <div class=\"header-content-inner\">\n                        <h1>Terms and conditions</h1>\n                        <a href=\"conditions#terms\" class=\"btn btn-outline btn-xl page-scroll\">See terms and conditions</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-sm-5\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device main\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" itemprop=\"screenshot\" src=\"../assets/img/demo-screen-rayo.png\" class=\"img-responsive\" alt=\"\"/>\n                            </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </header>\n  <section id=\"terms\" class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <p><em>Last updated: March 01, 2018</em></p><p>These Terms and Conditions (\"Terms\", \"Terms and Conditions\") govern your relationship with Ulysses mobile application (the \"Service\") operated by Salva App (\"us\", \"we\", or \"our\").</p><p>Please read these Terms and Conditions carefully before using our Ulysses mobile application (the \"Service\").</p><p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p><p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p><h3>Subscriptions</h3><p>Some parts of the Service are billed on a subscription basis (\"Subscription(s)\"). You will be billed in advance on a recurring and periodic basis (\"Billing Cycle\"). Billing cycles are set either on a monthly or annual basis, depending on the type of subscription plan you select when purchasing a Subscription.</p><p>At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or Salva App cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting Salva App customer support team.</p><p>A valid payment method, including credit card, is required to process the payment for your Subscription. You shall provide Salva App with accurate and complete billing information including full name, address, state, zip code, telephone number, and a valid payment method information. By submitting such payment information, you automatically authorize Salva App to charge all Subscription fees incurred through your account to any such payment instruments.</p><p>Should automatic billing fail to occur for any reason, Salva App will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.</p>\n                <h3>Fee Changes</h3><p>Salva App, in its sole discretion and at any time, may modify the Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.</p><p>Salva App will provide you with a reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.</p><p>Your continued use of the Service after the Subscription fee change comes into effect constitutes your agreement to pay the modified Subscription fee amount.</p><h3>Refunds</h3><p>Except when required by law, paid Subscription fees are non-refundable.</p><h3>Accounts</h3><p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p><p>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p><p>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p><h3>Intellectual Property</h3><p>The Service and its original content, features and functionality are and will remain the exclusive property of Salva App and its licensors. The Service is protected by copyright, trademark, and other laws of both the Germany and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Salva App.</p><h3>Links To Other Web Sites</h3><p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Salva App.</p><p>Salva App has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Salva App shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p><p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p><h3>Termination</h3><p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p><p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p><h3>Limitation Of Liability</h3><p>In no event shall Salva App, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p><h3>Disclaimer</h3><p>Your use of the Service is at your sole risk. The Service is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.</p><p>Salva App its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.</p><h3>Governing Law</h3><p>These Terms shall be governed and construed in accordance with the laws of Saxony, Germany, without regard to its conflict of law provisions.</p><p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p><h3>Changes</h3><p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p><p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p><h3>Contact Us</h3><p>If you have any questions about these Terms, please contact us.</p>\n            </div>\n        </div>\n  </section>\n  <section class=\"cta\">\n    <div class=\"cta-content\">\n        <div class=\"container\">\n            <h2>No esperes más.<br/>Ahorra.</h2>\n            <a href=\"help#download\" class=\"btn btn-outline btn-xl page-scroll\">Consigue Salva</a>\n        </div>\n    </div>\n    <div class=\"overlay\"></div>\n  </section>\n  "
+
+/***/ }),
+
+/***/ "../../../../../src/app/conditions/conditions.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConditionsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ConditionsComponent = (function () {
+    function ConditionsComponent() {
+    }
+    ConditionsComponent.prototype.ngOnInit = function () { };
+    ConditionsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-conditions',
+            template: __webpack_require__("../../../../../src/app/conditions/conditions.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/conditions/conditions.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ConditionsComponent);
+    return ConditionsComponent;
 }());
 
 
