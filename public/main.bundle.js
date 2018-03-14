@@ -27,8 +27,9 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__help_help_component__ = __webpack_require__("../../../../../src/app/help/help.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__ = __webpack_require__("../../../../../src/app/conditions/conditions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__privacy_privacy_component__ = __webpack_require__("../../../../../src/app/privacy/privacy.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -42,12 +43,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'help', component: __WEBPACK_IMPORTED_MODULE_3__help_help_component__["a" /* HelpComponent */] },
     { path: 'conditions', component: __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__["a" /* ConditionsComponent */] },
-    { path: 'product/:id', component: __WEBPACK_IMPORTED_MODULE_5__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */] },
-    { path: 'app', component: __WEBPACK_IMPORTED_MODULE_6__get_app_get_app_component__["a" /* GetAppComponent */] },
+    { path: 'privacy', component: __WEBPACK_IMPORTED_MODULE_5__privacy_privacy_component__["a" /* PrivacyComponent */] },
+    { path: 'product/:id', component: __WEBPACK_IMPORTED_MODULE_6__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */] },
+    { path: 'app', component: __WEBPACK_IMPORTED_MODULE_7__get_app_get_app_component__["a" /* GetAppComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
 ];
@@ -88,7 +91,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top affix-top\">\n\t<div class=\"container\">\n\t\t\t<!--   Brand and toggle get grouped for better mobile display   -->\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n\t\t\t\t\t\t<span class=\"sr-only\">Toggle navigation</span> Menu <i class=\"fa fa-bars\"></i>\n\t\t\t\t</button>\n\t\t\t\t<a class=\"navbar-brand page-scroll\" href=\"dashboard#page-top\">\n\t\t\t\t\t<span id=\"_name1\" itemprop=\"name\">salva</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<!--   Collect the nav links, forms, and other content for toggling   -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n\t\t\t\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#download\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Descarga</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#features\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Funciones</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"https://medium.com/salva-app\" target=\"_blank\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Blog</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#contact\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Contacto</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"help\">Soporte</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--   /.navbar-collapse   -->\n\t</div>\n\t<!--   /.container-fluid   -->\n</nav>\n<router-outlet></router-outlet>\n<section id=\"contact\" class=\"contact bg-primary\">\n\t\t<div class=\"container\">\n\t\t\t\t<h2>#salva</h2>\n\t\t\t\t<ul class=\"list-inline list-social\">\n\t\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.twitter.com/salva_app\"><i class=\"fa fa-twitter\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-facebook\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.facebook.com/salvaapp\"><i class=\"fa fa-facebook\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-instagram\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.instagram.com/salva_app\"><i class=\"fa fa-instagram\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-mail\">\n\t\t\t\t\t\t\t<a href=\"mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#097;&#108;&#118;&#097;&#097;&#112;&#112;&#046;&#099;&#111;&#109;\"><i class=\"fa fa-envelope\"></i></a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t<a href=\"https://t.me/salvaapp\" target=\"_blank\"><i class=\"fa fa-telegram\"></i></a>\n\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t</div>\n\t</section>\n<footer>\n\t<div class=\"container\">\n\t\t\t<p>© 2018 \n\t\t\t\t\t<span id=\"_author2\" itemscope=\"\" itemtype=\"http://schema.org/Person\">\n\t\t\t\t\t\t\t<span itemprop=\"givenName\">\n\t\t\t\t\t\t\t\tFede García y Paco Navarro\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t. Todos los derechos reservados. Salva participa en el Programa de Afiliados de Amazon, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es\n\t\t\t</p>\n\t\t\t<ul class=\"list-inline\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"#\">Privacy</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"#\">Terms</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"#\">FAQ</a>\n\t\t\t\t\t</li>\n\t\t\t</ul>\n\t</div>\n</footer>\n\n"
+module.exports = "<nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top affix-top\">\n\t<div class=\"container\">\n\t\t\t<!--   Brand and toggle get grouped for better mobile display   -->\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n\t\t\t\t\t\t<span class=\"sr-only\">Toggle navigation</span> Menu <i class=\"fa fa-bars\"></i>\n\t\t\t\t</button>\n\t\t\t\t<a class=\"navbar-brand page-scroll\" href=\"dashboard#page-top\">\n\t\t\t\t\t<span id=\"_name1\" itemprop=\"name\">salva</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<!--   Collect the nav links, forms, and other content for toggling   -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n\t\t\t\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#download\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Descarga</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#features\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Funciones</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"https://medium.com/salva-app\" target=\"_blank\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Blog</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#contact\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Contacto</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"help\">Soporte</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--   /.navbar-collapse   -->\n\t</div>\n\t<!--   /.container-fluid   -->\n</nav>\n<router-outlet></router-outlet>\n<section id=\"contact\" class=\"contact bg-primary\">\n\t\t<div class=\"container\">\n\t\t\t\t<h2>#salva</h2>\n\t\t\t\t<ul class=\"list-inline list-social\">\n\t\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.twitter.com/salva_app\"><i class=\"fa fa-twitter\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-facebook\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.facebook.com/salvaapp\"><i class=\"fa fa-facebook\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-instagram\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.instagram.com/salva_app\"><i class=\"fa fa-instagram\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-mail\">\n\t\t\t\t\t\t\t<a href=\"mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#097;&#108;&#118;&#097;&#097;&#112;&#112;&#046;&#099;&#111;&#109;\"><i class=\"fa fa-envelope\"></i></a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t<a href=\"https://t.me/salvaapp\" target=\"_blank\"><i class=\"fa fa-telegram\"></i></a>\n\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t</div>\n\t</section>\n<footer>\n\t<div class=\"container\">\n\t\t\t<p>© 2018 \n\t\t\t\t\t<span id=\"_author2\" itemscope=\"\" itemtype=\"http://schema.org/Person\">\n\t\t\t\t\t\t\t<span itemprop=\"givenName\">\n\t\t\t\t\t\t\t\tFede García y Paco Navarro\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t. Todos los derechos reservados. Salva participa en el Programa de Afiliados de Amazon, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es\n\t\t\t</p>\n\t\t\t<ul class=\"list-inline\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"privacy\">Privacy</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"conditions\">Terms</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"help\">FAQ</a>\n\t\t\t\t\t</li>\n\t\t\t</ul>\n\t</div>\n</footer>\n\n"
 
 /***/ }),
 
@@ -135,12 +138,13 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__help_help_component__ = __webpack_require__("../../../../../src/app/help/help.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__conditions_conditions_component__ = __webpack_require__("../../../../../src/app/conditions/conditions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hero_service__ = __webpack_require__("../../../../../src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__message_service__ = __webpack_require__("../../../../../src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__privacy_privacy_component__ = __webpack_require__("../../../../../src/app/privacy/privacy.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__hero_service__ = __webpack_require__("../../../../../src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__message_service__ = __webpack_require__("../../../../../src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -161,7 +165,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_12__environments_environment__["a" /* environment */].production) {
+
+if (__WEBPACK_IMPORTED_MODULE_13__environments_environment__["a" /* environment */].production) {
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* enableProdMode */])();
 }
 var AppModule = (function () {
@@ -174,15 +179,16 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_component__["a" /* DashboardComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__help_help_component__["a" /* HelpComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__conditions_conditions_component__["a" /* ConditionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__get_app_get_app_component__["a" /* GetAppComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__privacy_privacy_component__["a" /* PrivacyComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__["a" /* GetAppComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_12__angular_common_http__["b" /* HttpClientModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_9__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_10__message_service__["a" /* MessageService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_10__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_11__message_service__["a" /* MessageService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -707,6 +713,66 @@ var MessageService = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
     ], MessageService);
     return MessageService;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/privacy/privacy.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/privacy/privacy.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-7\">\n                <div class=\"header-content\">\n                    <div class=\"header-content-inner\">\n                        <h1>Privacy</h1>\n                        <a href=\"privacy#terms\" class=\"btn btn-outline btn-xl page-scroll\">See privacy policy</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-sm-5\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device main\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" itemprop=\"screenshot\" src=\"../assets/img/demo-screen-rayo.png\" class=\"img-responsive\" alt=\"\"/>\n                            </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </header>\n  <section id=\"terms\" class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <div class=\"innerText\"><p><strong>At Salva, we respect your privacy. We collect only a minimum of personal data. The data we collect is necessary for maintaining and improving Salva. This Privacy Policy gives you an overview of the data we collect and what we do with it.</strong></p><em>Last updated: August 25, 2017</em></div><div class=\"innerText\"><br data-mce-bogus=\"1\"></div><div class=\"innerText\">Salva (“us”, “we”, or “our”) operates the getsalva.com website and the Salva mobile application (the “Service”).&nbsp;</div><div class=\"innerText\"><br data-mce-bogus=\"1\"></div><div class=\"innerText\">This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.<br></div><div class=\"innerText\"><br>We will not use or share your information with anyone except as described in this Privacy Policy.<br><br>We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</div><h3 class=\"innerText\">Information Collection And Use<br></h3><p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your email address, name (“Personal Information”).</p><h3>Log Data </h3><p>We may also collect information that your browser sends whenever you visit our Service or when you access the Service by or through a mobile device (“Log Data”).</p><p>This Log Data may include information such as your computer’s Internet Protocol (“IP”) address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages and other statistics.</p><p>When you access the Service by or through a mobile device, this Log Data may include information such as the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use and other statistics.</p><p>In addition, we may use third party services such as Google Analytics that collect, monitor and analyze this type of information in order to increase our Service’s functionality. These third party service providers have their own privacy policies addressing how they use such information.</p><h3>Cookies</h3><p>Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer’s hard drive.</p><p>We use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p><h3>Service Providers</h3><p>We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p><p>These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p><h3>Communications </h3><p>We may use your Personal Information to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or instructions provided in any email we send.</p><h3>Compliance With Laws </h3><p>We will disclose your Personal Information where required to do so by law or subpoena or if we believe that such action is necessary to comply with the law and the reasonable requests of law enforcement or to protect the security or integrity of our Service.</p><h3>Business Transaction </h3><p>If Salva is involved in a merger, acquisition or asset sale, your Personal Information may be transferred. We will provide notice before your Personal Information is transferred and becomes subject to a different Privacy Policy.</p><h3>Security </h3><p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p><h3>International Transfer </h3><p>Your information, including Personal Information, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.<br><br>If you are located outside Germany and choose to provide information to us, please note that we transfer the information, including Personal Information, to Germany and process it there.<br><br>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p><h3>Links To Other Sites </h3><p>Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party’s site. We strongly advise you to review the Privacy Policy of every site you visit.<br><br>We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p><h3>Children’s Privacy </h3><p>Our Service does not address anyone under the age of 13 (“Children”).</p><p>We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your Children has provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from a children under age 13 without verification of parental consent, we take steps to remove that information from our servers.</p><h3>Changes To This Privacy Policy </h3><p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p><p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p><h3>Contact Us </h3><p>If you have any questions about this Privacy Policy, please contact us.<br></p>\n            </div>\n        </div>\n  </section>\n  <section class=\"cta\">\n    <div class=\"cta-content\">\n        <div class=\"container\">\n            <h2>No esperes más.<br/>Ahorra.</h2>\n            <a href=\"help#download\" class=\"btn btn-outline btn-xl page-scroll\">Consigue Salva</a>\n        </div>\n    </div>\n    <div class=\"overlay\"></div>\n  </section>\n  "
+
+/***/ }),
+
+/***/ "../../../../../src/app/privacy/privacy.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrivacyComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PrivacyComponent = (function () {
+    function PrivacyComponent() {
+    }
+    PrivacyComponent.prototype.ngOnInit = function () { };
+    PrivacyComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-privacy',
+            template: __webpack_require__("../../../../../src/app/privacy/privacy.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/privacy/privacy.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PrivacyComponent);
+    return PrivacyComponent;
 }());
 
 
