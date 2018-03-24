@@ -29,7 +29,8 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__ = __webpack_require__("../../../../../src/app/conditions/conditions.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__privacy_privacy_component__ = __webpack_require__("../../../../../src/app/privacy/privacy.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fastpass_fastpass_component__ = __webpack_require__("../../../../../src/app/fastpass/fastpass.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,13 +45,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'help', component: __WEBPACK_IMPORTED_MODULE_3__help_help_component__["a" /* HelpComponent */] },
     { path: 'conditions', component: __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__["a" /* ConditionsComponent */] },
+    { path: 'fastpass', component: __WEBPACK_IMPORTED_MODULE_7__fastpass_fastpass_component__["a" /* FastpassComponent */] },
     { path: 'privacy', component: __WEBPACK_IMPORTED_MODULE_5__privacy_privacy_component__["a" /* PrivacyComponent */] },
     { path: 'product/:id', component: __WEBPACK_IMPORTED_MODULE_6__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */] },
-    { path: 'app', component: __WEBPACK_IMPORTED_MODULE_7__get_app_get_app_component__["a" /* GetAppComponent */] },
+    { path: 'app', component: __WEBPACK_IMPORTED_MODULE_8__get_app_get_app_component__["a" /* GetAppComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
 ];
@@ -78,7 +81,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".navbar-default {\n  background-color: #00FFD4;\n  color: black;\n  border-color: rgba(34, 34, 34, 0.05);\n  transition: all 0.35s;\n  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';\n  font-weight: 200;\n  letter-spacing: 1px;\n}\n.navbar-default .navbar-header .navbar-brand {\n  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';\n  font-weight: 200;\n  letter-spacing: 1px;\n  color: #000642;\n}\n.navbar-default .navbar-header .navbar-brand:hover,\n.navbar-default .navbar-header .navbar-brand:focus {\n  color: #000642;\n}\n.navbar-default .navbar-toggle:hover {\n  background-color: #00FFD4;\n}\n.navbar-default .navbar-toggle {\n  border: 0;\n}\n.navbar-default .navbar-collapse {\n  border: 0;\n}\n.navbar-default .navbar-header .navbar-toggle {\n  font-size: 12px;\n  color: #222222;\n  padding: 8px 10px;\n}\n.navbar-default .nav > li > a {\n  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-size: 11px;\n}\n.navbar-default .nav > li > a,\n.navbar-default .nav > li > a:focus {\n  color: #222222;\n}\n.navbar-default .nav > li > a:hover,\n.navbar-default .nav > li > a:focus:hover {\n  color: #000642;\n}\n.navbar-default .nav > li.active > a,\n.navbar-default .nav > li.active > a:focus {\n  color: #000642;\n  background-color: transparent;\n}\n.navbar-default .nav > li.active > a:hover,\n.navbar-default .nav > li.active > a:focus:hover {\n  background-color: transparent;\n}\n@media (min-width: 768px) {\n  .navbar-default {\n    border-color: transparent;\n  }\n  .navbar-default .navbar-header .navbar-brand {\n    color: rgba(0, 6, 66, 0.7);\n  }\n  .navbar-default .navbar-header .navbar-brand:hover,\n  .navbar-default .navbar-header .navbar-brand:focus {\n    color: white;\n  }\n  .navbar-default .nav > li > a,\n  .navbar-default .nav > li > a:focus {\n    color: rgba(0, 6, 66, 0.7);\n  }\n  .navbar-default .nav > li > a:hover,\n  .navbar-default .nav > li > a:focus:hover {\n    color: white;\n  }\n  .navbar-default.affix {\n    background-color: white;\n    border-color: rgba(34, 34, 34, 0.1);\n  }\n  .navbar-default.affix .navbar-header .navbar-brand {\n    color: #222222;\n  }\n  .navbar-default.affix .navbar-header .navbar-brand:hover,\n  .navbar-default.affix .navbar-header .navbar-brand:focus {\n    color: #000642;\n  }\n  .navbar-default.affix .nav > li > a,\n  .navbar-default.affix .nav > li > a:focus {\n    color: #222222;\n  }\n  .navbar-default.affix .nav > li > a:hover,\n  .navbar-default.affix .nav > li > a:focus:hover {\n    color: #000642;\n  }\n}\n", ""]);
 
 // exports
 
@@ -91,7 +94,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top affix-top\">\n\t<div class=\"container\">\n\t\t\t<!--   Brand and toggle get grouped for better mobile display   -->\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n\t\t\t\t\t\t<span class=\"sr-only\">Toggle navigation</span> Menu <i class=\"fa fa-bars\"></i>\n\t\t\t\t</button>\n\t\t\t\t<a class=\"navbar-brand page-scroll\" href=\"dashboard#page-top\">\n\t\t\t\t\t<span id=\"_name1\" itemprop=\"name\">salva</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<!--   Collect the nav links, forms, and other content for toggling   -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n\t\t\t\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#download\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Descarga</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#features\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Funciones</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"https://medium.com/salva-app\" target=\"_blank\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Blog</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#contact\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Contacto</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"help\">Soporte</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--   /.navbar-collapse   -->\n\t</div>\n\t<!--   /.container-fluid   -->\n</nav>\n<router-outlet></router-outlet>\n<section id=\"contact\" class=\"contact bg-primary\">\n\t\t<div class=\"container\">\n\t\t\t\t<h2>#salva</h2>\n\t\t\t\t<ul class=\"list-inline list-social\">\n\t\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.twitter.com/salva_app\"><i class=\"fa fa-twitter\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-facebook\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.facebook.com/salvaapp\"><i class=\"fa fa-facebook\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-instagram\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.instagram.com/salva_app\"><i class=\"fa fa-instagram\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-mail\">\n\t\t\t\t\t\t\t<a href=\"mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#097;&#108;&#118;&#097;&#097;&#112;&#112;&#046;&#099;&#111;&#109;\"><i class=\"fa fa-envelope\"></i></a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t<a href=\"https://t.me/salvaapp\" target=\"_blank\"><i class=\"fa fa-telegram\"></i></a>\n\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t</div>\n\t</section>\n<footer>\n\t<div class=\"container\">\n\t\t\t<p>© 2018 \n\t\t\t\t\t<span id=\"_author2\" itemscope=\"\" itemtype=\"http://schema.org/Person\">\n\t\t\t\t\t\t\t<span itemprop=\"givenName\">\n\t\t\t\t\t\t\t\tFede García y Paco Navarro\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t. Todos los derechos reservados. Salva participa en el Programa de Afiliados de Amazon, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es\n\t\t\t</p>\n\t\t\t<ul class=\"list-inline\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"privacy\">Privacy</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"conditions\">Terms</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"help\">FAQ</a>\n\t\t\t\t\t</li>\n\t\t\t</ul>\n\t</div>\n</footer>\n\n"
+module.exports = "<nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top affix-top\">\n\t<div class=\"container\">\n\t\t\t<!--   Brand and toggle get grouped for better mobile display   -->\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n\t\t\t\t\t\t<span class=\"sr-only\">Toggle navigation</span> Menu <i class=\"fa fa-bars\"></i>\n\t\t\t\t</button>\n\t\t\t\t<a class=\"navbar-brand page-scroll\" href=\"dashboard#page-top\">\n\t\t\t\t\t<span id=\"_name1\" itemprop=\"name\">salva</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<!--   Collect the nav links, forms, and other content for toggling   -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n\t\t\t\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#download\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Descarga</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#features\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Funciones</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"https://medium.com/salva-app\" target=\"_blank\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Blog</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"fastpass\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Fast Pass</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"dashboard#contact\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Contacto</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a class=\"page-scroll\" href=\"help\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">Soporte</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--   /.navbar-collapse   -->\n\t</div>\n\t<!--   /.container-fluid   -->\n</nav>\n<router-outlet></router-outlet>\n<section id=\"contact\" class=\"contact bg-primary\">\n\t\t<div class=\"container\">\n\t\t\t\t<h2>#salva</h2>\n\t\t\t\t<ul class=\"list-inline list-social\">\n\t\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.twitter.com/salva_app\"><i class=\"fa fa-twitter\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-facebook\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.facebook.com/salvaapp\"><i class=\"fa fa-facebook\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-instagram\">\n\t\t\t\t\t\t\t\t<a href=\"http://www.instagram.com/salva_app\"><i class=\"fa fa-instagram\"></i></a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"social-mail\">\n\t\t\t\t\t\t\t<a href=\"mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#097;&#108;&#118;&#097;&#097;&#112;&#112;&#046;&#099;&#111;&#109;\"><i class=\"fa fa-envelope\"></i></a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"social-twitter\">\n\t\t\t\t\t\t<a href=\"https://t.me/salvaapp\" target=\"_blank\"><i class=\"fa fa-telegram\"></i></a>\n\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t</div>\n\t</section>\n<footer>\n\t<div class=\"container\">\n\t\t\t<p>© 2018 \n\t\t\t\t\t<span id=\"_author2\" itemscope=\"\" itemtype=\"http://schema.org/Person\">\n\t\t\t\t\t\t\t<span itemprop=\"givenName\">\n\t\t\t\t\t\t\t\tFede García y Paco Navarro\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t. Todos los derechos reservados. Salva participa en el Programa de Afiliados de Amazon, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es\n\t\t\t</p>\n\t\t\t<ul class=\"list-inline\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"privacy\">Privacy</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"conditions\">Terms</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<a href=\"help\">FAQ</a>\n\t\t\t\t\t</li>\n\t\t\t</ul>\n\t</div>\n</footer>\n\n"
 
 /***/ }),
 
@@ -138,13 +141,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__help_help_component__ = __webpack_require__("../../../../../src/app/help/help.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__conditions_conditions_component__ = __webpack_require__("../../../../../src/app/conditions/conditions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__privacy_privacy_component__ = __webpack_require__("../../../../../src/app/privacy/privacy.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__hero_service__ = __webpack_require__("../../../../../src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__message_service__ = __webpack_require__("../../../../../src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fastpass_fastpass_component__ = __webpack_require__("../../../../../src/app/fastpass/fastpass.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__privacy_privacy_component__ = __webpack_require__("../../../../../src/app/privacy/privacy.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hero_detail_hero_detail_component__ = __webpack_require__("../../../../../src/app/hero-detail/hero-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__get_app_get_app_component__ = __webpack_require__("../../../../../src/app/get-app/get-app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__hero_service__ = __webpack_require__("../../../../../src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__message_service__ = __webpack_require__("../../../../../src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -166,7 +170,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_13__environments_environment__["a" /* environment */].production) {
+
+if (__WEBPACK_IMPORTED_MODULE_14__environments_environment__["a" /* environment */].production) {
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* enableProdMode */])();
 }
 var AppModule = (function () {
@@ -179,16 +184,17 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_component__["a" /* DashboardComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__help_help_component__["a" /* HelpComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__conditions_conditions_component__["a" /* ConditionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__privacy_privacy_component__["a" /* PrivacyComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__["a" /* GetAppComponent */]
+                __WEBPACK_IMPORTED_MODULE_8__privacy_privacy_component__["a" /* PrivacyComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__fastpass_fastpass_component__["a" /* FastpassComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__get_app_get_app_component__["a" /* GetAppComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_12__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_13__angular_common_http__["b" /* HttpClientModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_10__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_11__message_service__["a" /* MessageService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_11__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_12__message_service__["a" /* MessageService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -313,6 +319,75 @@ var DashboardComponent = (function () {
         __metadata("design:paramtypes", [])
     ], DashboardComponent);
     return DashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/fastpass/fastpass.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "h2.section-heading {\n  color: #1DA1F2;\n}\nheader {\n  background: #000642;\n}\nheader .header-content .header-content-inner h1 {\n  color: #1DA1F2;\n}\n\na {\n  color: #1DA1F2;\n}\n\n.bg-primary {\n  background: #00FFD4;\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/fastpass/fastpass.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-7\">\n                <div class=\"header-content\">\n                    <div class=\"header-content-inner\">\n                        <h1>Fast Pass</h1>\n                        <a href=\"fastpass#features\" class=\"btn btn-outline btn-xl page-scroll\">\n                            Notificaciones más rápidas\n                        </a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-sm-5\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device main\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" itemprop=\"screenshot\" src=\"../assets/img/fastpass_logo.png\" class=\"img-responsive\" alt=\"\"/>\n                            </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </header>\n      <section id=\"features\" class=\"features\">\n          <div class=\"container\">\n              <div class=\"row\">\n                  <div class=\"col-lg-12 text-center\">\n                      <div class=\"section-heading\">\n                          <h2>Suscríbete a notificaciones aún más rápidas.</h2>\n                          <p class=\"text-muted\">Acelera tu ahorro y consigue tu Fast Pass. Disponible de momento sólo en\n                              <span itemprop=\"operatingSystem\">iOS</span>\n                          </p>\n                          <hr/>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-md-4\">\n                      <div class=\"device-container\">\n                          <div class=\"device-mockup iphone6_plus portrait white\">\n                              <div class=\"device\">\n                                  <div class=\"screen\">\n                                    <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                    <img itemprop=\"screenshot\" src=\"../assets/img/fastpass-screen.png\" class=\"img-responsive\" alt=\"\"/> </div>\n                                  <div class=\"button\">\n                                    <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                                  </div>\n                              </div>\n                          </div>\n                      </div>\n                  </div>\n                  <div class=\"col-md-8\">\n                    <div class=\"container-fluid\">\n                      <div class=\"row\">\n                        <div class=\"col-md-6\">\n                          <div class=\"feature-item\">\n                            <h3>¿Qué ofrece Salva Fast Pass?</h3>\n                            <p class=\"text-muted\">\n                              Para los que no pueden esperar. A veces, no llegamos a tiempo a las ofertas. Suscríbete desde la aplicación y consigue notificaciones aún más rápidas.\n                            </p>\n                          </div>\n                        </div>\n                        <div class=\"col-md-6\">\n                          <div class=\"feature-item\">\n                            <h3>¿Cómo funciona Fast Pass?</h3>\n                            <p class=\"text-muted\">\n                              Los productos de la lista de seguimiento de los suscriptores de Fast Pass están en un sistema dedicado con más recursos por lo que podemos detectar antes las ofertas.\n                            </p>\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"row\">\n                        <div class=\"col-md-6\">\n                          <div class=\"feature-item\">\n                            <h3>¿Qué otras ventajas ofrece?</h3>\n                            <p class=\"text-muted\">\n                              Los suscriptores pueden añadir productos de manera casi ilimitada a sus listas, al contrario que el resto de usuarios cuyas listas son de menor capacidad.\n                            </p>\n                          </div>\n                        </div>\n                        <div class=\"col-md-6\">\n                          <div class=\"feature-item\">\n                            <h3>¿Qué modalidades existen?</h3>\n                            <p class=\"text-muted\">\n                              Sólo hay una modalidad de Fast Pass aunque te puedes suscribir de forma mensual o anual. La opción anual tiene un descuento del 20%. <a href=\"https://itunes.apple.com/es/app/salva/id1156149609?mt=8\" target=\"_blank\">Suscríbete ahora</a>\n                            </p>\n                          </div>\n                        </div>\n                      </div>\n                    </div>\n                  </div>\n              </div>\n          </div>\n      </section>\n      <section id=\"salvaeuristas\" class=\"salvaeuristas\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-4 text-center\">\n                    <img src=\"../assets/img/salvaeuristas_badge.png\" alt=\"\"/>\n                </div>\n                <div class=\"col-md-8 text-center\">\n                    <div class=\"container-fluid\">\n                        <div class=\"row\">\n                            <!-- Begin MailChimp Signup Form -->\n                            <div id=\"mc_embed_signup\">\n                            <form action=\"//fedegarlo.us14.list-manage.com/subscribe/post?u=b9021cafb46d6c2efc44bc0c9&amp;id=7b5b399867\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\">\n                                <div id=\"mc_embed_signup_scroll\">\n                                <h2>Únete a Salvaeuristas y recibe nuestro boletín</h2>\n                            <div class=\"mc-field-group\">\n                                <label style=\"display:none\" for=\"mce-EMAIL\">Email Address </label>\n                                <input placeholder=\"Correo electrónico\" type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" size=\"40\" required>\n                            </div>\n                                <div id=\"mce-responses\" class=\"clear\">\n                                    <div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n                                    <div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n                                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n                                <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_b9021cafb46d6c2efc44bc0c9_7b5b399867\" tabindex=\"-1\" value=\"\"></div>\n                                <div class=\"enviar\"><input type=\"submit\" value=\"Suscríbete\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"btn-style\"></div>\n                                </div>\n                            </form>\n                            </div>\n      \n      <!--End mc_embed_signup-->\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n      </section>\n      <section class=\"cta\">\n        <div class=\"cta-content\">\n            <div class=\"container\">\n                <h2>No esperes más.<br/>Ahorra.</h2>\n                <a href=\"help#download\" class=\"btn btn-outline btn-xl page-scroll\">Consigue Salva</a>\n            </div>\n        </div>\n        <div class=\"overlay\"></div>\n      </section>\n  "
+
+/***/ }),
+
+/***/ "../../../../../src/app/fastpass/fastpass.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FastpassComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+var FastpassComponent = (function () {
+    function FastpassComponent(document) {
+        this.document = document;
+    }
+    FastpassComponent.prototype.ngOnInit = function () {
+        this.document.body.classList.add('fastpass');
+    };
+    FastpassComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-fastpass',
+            template: __webpack_require__("../../../../../src/app/fastpass/fastpass.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/fastpass/fastpass.component.css")]
+        }),
+        __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DOCUMENT */])),
+        __metadata("design:paramtypes", [Object])
+    ], FastpassComponent);
+    return FastpassComponent;
 }());
 
 
@@ -544,8 +619,8 @@ var HeroDetailComponent = (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
             __WEBPACK_IMPORTED_MODULE_4__hero_service__["a" /* HeroService */],
             __WEBPACK_IMPORTED_MODULE_2__angular_common__["f" /* Location */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* Meta */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["c" /* Title */]])
+            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["c" /* Meta */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["d" /* Title */]])
     ], HeroDetailComponent);
     return HeroDetailComponent;
 }());
