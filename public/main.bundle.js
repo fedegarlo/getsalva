@@ -54,6 +54,7 @@ var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'help', component: __WEBPACK_IMPORTED_MODULE_3__help_help_component__["a" /* HelpComponent */] },
     { path: 'conditions', component: __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__["a" /* ConditionsComponent */] },
+    { path: 'terms', component: __WEBPACK_IMPORTED_MODULE_4__conditions_conditions_component__["a" /* ConditionsComponent */] },
     { path: 'fastpass', component: __WEBPACK_IMPORTED_MODULE_8__fastpass_fastpass_component__["a" /* FastpassComponent */] },
     { path: 'privacy', component: __WEBPACK_IMPORTED_MODULE_5__privacy_privacy_component__["a" /* PrivacyComponent */] },
     { path: 'privacidad', component: __WEBPACK_IMPORTED_MODULE_6__privacidad_privacidad_component__["a" /* PrivacidadComponent */] },
