@@ -33,12 +33,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__fastpass_fastpass_component__ = __webpack_require__("./src/app/fastpass/fastpass.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__ = __webpack_require__("./src/app/get-app/get-app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__ = __webpack_require__("./src/app/eula/eula.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -62,6 +64,7 @@ var routes = [
     { path: 'app', component: __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__["a" /* GetAppComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: 'eula', component: __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__["a" /* EulaComponent */] },
+    { path: 'auth', component: __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__["a" /* AuthComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
 ];
 var AppRoutingModule = (function () {
@@ -143,10 +146,12 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__hero_detail_hero_detail_component__ = __webpack_require__("./src/app/hero-detail/hero-detail.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__get_app_get_app_component__ = __webpack_require__("./src/app/get-app/get-app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__ = __webpack_require__("./src/app/eula/eula.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__message_service__ = __webpack_require__("./src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__message_service__ = __webpack_require__("./src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -171,8 +176,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_16__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* enableProdMode */])();
+
+
+if (__WEBPACK_IMPORTED_MODULE_17__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* enableProdMode */])();
 }
 var AppModule = (function () {
     function AppModule() {
@@ -189,18 +196,87 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_7__fastpass_fastpass_component__["a" /* FastpassComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__get_app_get_app_component__["a" /* GetAppComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__["a" /* EulaComponent */]
+                __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__["a" /* EulaComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__["a" /* AuthComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_16__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_18__angular_forms__["a" /* FormsModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_13__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_14__message_service__["a" /* MessageService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_14__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_15__message_service__["a" /* MessageService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth/auth.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "input {\n    border: 1px black solid;\n}\n\n.logo {\n    text-align: center;\n}\n\n.logo img {\n    width: 120px;\n}\n\np.link {\n    margin-top: 10px;\n    font-size: 12px;\n}\n\nform {\n    margin-top: 10px; \n}\n\nh2 {\n    font-size: 18px;\n    margin-top: 10px;\n    font-weight: 400;\n}"
+
+/***/ }),
+
+/***/ "./src/app/auth/auth.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-12\">\n\t\t\t\t<div class=\"logo\">\n\t\t\t\t\t<img src=\"/assets/img/salva_logo_box.png\" alt=\"\" />\n\t\t\t\t\t<h2>Iniciar sesión en Salva</h2>\n\t\t\t\t</div>\n\t\t\t\t<form #form method=\"POST\" enctype=\"application/x-www-form-urlencoded\" action=\"http://salva-api.com/oauth\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user\">Usuario</label>\n\t\t\t\t\t\t<input class=\"form-control\" id=\"user\" name=\"username\" type=\"text\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"pass\">Password</label>\n\t\t\t\t\t\t<input class=\"form-control\" id=\"pass\" name=\"password\" type=\"password\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"client_id\" [(ngModel)]=\"CLIENT_ID\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"redirect_uri\" [(ngModel)]=\"REDIRECT_URI\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"state\" [(ngModel)]=\"STATE\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"response_type\" [(ngModel)]=\"RESPONSE_TYPE\">\n\t\t\t\t\t\t<button type=\"submit\" (click)=\"form.submit()\" class=\"btn btn-primary btn-lg btn-block\">Enviar</button>\n\t\t\t\t</form>\n\t\t\t\t<p class=\"link\">\n\t\t\t\t\t¿Aún no tienes cuenta? <a target=\"_blank\" href=\"http://www.getsalva.com\">Descarga nuestra aplicación</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n  "
+
+/***/ }),
+
+/***/ "./src/app/auth/auth.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AuthComponent = (function () {
+    function AuthComponent() {
+        this.CLIENT_ID = '';
+        this.REDIRECT_URI = '';
+        this.STATE = '';
+        this.RESPONSE_TYPE = '';
+        this.CLIENT_ID = this.GetURLParameter('client_id');
+        this.REDIRECT_URI = this.GetURLParameter('redirect_uri');
+        this.STATE = this.GetURLParameter('state');
+        this.RESPONSE_TYPE = this.GetURLParameter('response_type');
+    }
+    AuthComponent.prototype.ngOnInit = function () { };
+    AuthComponent.prototype.GetURLParameter = function (sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    };
+    AuthComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-auth',
+            template: __webpack_require__("./src/app/auth/auth.component.html"),
+            styles: [__webpack_require__("./src/app/auth/auth.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AuthComponent);
+    return AuthComponent;
 }());
 
 
@@ -903,7 +979,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
