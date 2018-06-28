@@ -34,12 +34,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__ = __webpack_require__("./src/app/get-app/get-app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__ = __webpack_require__("./src/app/eula/eula.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__ = __webpack_require__("./src/app/recover/recover.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -65,6 +67,7 @@ var routes = [
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: 'eula', component: __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__["a" /* EulaComponent */] },
     { path: 'auth', component: __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__["a" /* AuthComponent */] },
+    { path: 'recover', component: __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__["a" /* RecoverComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
 ];
 var AppRoutingModule = (function () {
@@ -147,11 +150,12 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__get_app_get_app_component__ = __webpack_require__("./src/app/get-app/get-app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__ = __webpack_require__("./src/app/eula/eula.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__message_service__ = __webpack_require__("./src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recover_recover_component__ = __webpack_require__("./src/app/recover/recover.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__message_service__ = __webpack_require__("./src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -178,7 +182,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_17__environments_environment__["a" /* environment */].production) {
+
+if (__WEBPACK_IMPORTED_MODULE_18__environments_environment__["a" /* environment */].production) {
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* enableProdMode */])();
 }
 var AppModule = (function () {
@@ -197,15 +202,16 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_10__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__get_app_get_app_component__["a" /* GetAppComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__["a" /* EulaComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__["a" /* AuthComponent */]
+                __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__["a" /* AuthComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__recover_recover_component__["a" /* RecoverComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_16__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_18__angular_forms__["a" /* FormsModule */]
+                __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_19__angular_forms__["a" /* FormsModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_14__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_15__message_service__["a" /* MessageService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_15__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_16__message_service__["a" /* MessageService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -498,7 +504,7 @@ module.exports = ""
 /***/ "./src/app/get-app/get-app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-7\">\n                <div class=\"header-content\">\n                    <div class=\"header-content-inner\">\n                        <h1>Recibe notificaciones cuando tus productos bajen de precio.</h1>\n                        <a href=\"app#download\" class=\"btn btn-outline btn-xl page-scroll\">Empieza a ahorrar</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-sm-5\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device main\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" itemprop=\"screenshot\" src=\"../assets/img/demo-screen-rayo.png\" class=\"img-responsive\" alt=\"\"/>\n                            </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </header>\n  \n  \n  <span itemref=\"_name1\"></span><section id=\"download\" class=\"download bg-primary text-center\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-8 col-md-offset-2\">\n                <h2 class=\"section-heading\">No tenemos sueños baratos.</h2>\n                <p>Hasta que bajan de precio.</p>\n                <div class=\"badges\">\n                    <a itemprop=\"downloadUrl\" itemprop=\"downloadUrl\" class=\"badge-link\" href=\"http://itunes.apple.com/es/app/salva-lista-tus-deseos.-sigue/id1156149609?l=es&mt=8&ct=landing\" target=\"_blank\"><img src=\"../assets/img/app-store-badge.svg\" alt=\"\"/></a>\n                    <a itemprop=\"downloadUrl\" class=\"badge-link\" href=\"https://play.google.com/store/apps/details?id=es.salva.notifier\" target=\"_blank\"><img src=\"../assets/img/google-play-badge.svg\" alt=\"\"/></a>\n                </div>\n            </div>\n        </div>\n    </div>\n  </section>\n  <section id=\"features\" class=\"features\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-12 text-center\">\n                <div class=\"section-heading\">\n                    <h2>Nada nos importa más que tus deseos.</h2>\n                    <p class=\"text-muted\">Añade tu lista de deseos con un sólo click. Disponible en \n                        <span itemprop=\"operatingSystem\" itemtype=\"http://schema.org/OperatingSystem\">iOS</span> y <span itemprop=\"operatingSystem\" itemtype=\"http://schema.org/OperatingSystem\">Android</span>Android.\n                    </p>\n                    <hr/>\n                </div>\n            </div>\n        </div>\n        <div style=\"display:none;\">\n            <span id=\"_name12\" itemprop=\"aggregateRating\" itemtype=\"http://schema.org/AggregateRating\"></span>\n            <span id=\"_name13\" itemprop=\"applicationCategory\" itemtype=\"http://schema.org/ApplicationCategory\"></span>\n            <span id=\"_name14\" itemprop=\"offers\" itemtype=\"http://schema.org/Offers\"></span>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" src=\"../assets/img/demo-screen.png\" class=\"img-responsive\" alt=\"\"/> </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-8\">\n                <div class=\"container-fluid\">\n                    <div class=\"row\">\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-pencil text-primary\"></i>\n                                <h3>Listar</h3>\n                                <p class=\"text-muted\">Guarda tu lista de deseos y descubre cuando bajan o suben de precio. Descubre ofertas que otros usuarios han encontrado y aprovéchalas por tiempo limitado.</p>\n                            </div>\n                        </div>\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-tag text-primary\"></i>\n                                <h3>Seguir</h3>\n                                <p class=\"text-muted\">En ocasiones, las ofertas duran muy poco tiempo o se producen descuentos increíbles en unidades limitadas.</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-cloud-upload text-primary\"></i>\n                                <h3>Importar</h3>\n                                <p class=\"text-muted\">Importa tu lista de deseos con un solo click y averigua al instante si baja de precio para comprar en el mejor momento.</p>\n                            </div>\n                        </div>\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-wallet text-primary\"></i>\n                                <h3>Comprar</h3>\n                                <p class=\"text-muted\">Recibe notificaciones push cuando baje o suba de precio y no te pierdas ninguna. Notificaciones que llegan realmente rápido.</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </section>\n  <section id=\"salvaeuristas\" class=\"salvaeuristas\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-4 text-center\">\n                <img src=\"../assets/img/salvaeuristas_badge.png\" alt=\"\"/>\n            </div>\n            <div class=\"col-md-8 text-center\">\n                <div class=\"container-fluid\">\n                    <div class=\"row\">\n                        <!-- Begin MailChimp Signup Form -->\n                        <div id=\"mc_embed_signup\">\n                        <form action=\"//fedegarlo.us14.list-manage.com/subscribe/post?u=b9021cafb46d6c2efc44bc0c9&amp;id=7b5b399867\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\">\n                            <div id=\"mc_embed_signup_scroll\">\n                            <h2>Únete a Salvaeuristas y recibe nuestro boletín</h2>\n                        <div class=\"mc-field-group\">\n                            <label style=\"display:none\" for=\"mce-EMAIL\">Email Address </label>\n                            <input placeholder=\"Correo electrónico\" type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" size=\"40\" required>\n                        </div>\n                            <div id=\"mce-responses\" class=\"clear\">\n                                <div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n                                <div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n                            <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_b9021cafb46d6c2efc44bc0c9_7b5b399867\" tabindex=\"-1\" value=\"\"></div>\n                            <div class=\"enviar\"><input type=\"submit\" value=\"Suscríbete\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"btn-style\"></div>\n                            </div>\n                        </form>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </section>\n  <section class=\"cta\">\n    <div class=\"cta-content\">\n        <div class=\"container\">\n            <h2>No esperes más.<br/>Ahorra.</h2>\n            <a href=\"app#download\" class=\"btn btn-outline btn-xl page-scroll\">Consigue Salva</a>\n        </div>\n    </div>\n    <div class=\"overlay\"></div>\n  </section>\n  "
+module.exports = "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-7\">\n                <div class=\"header-content\">\n                    <div class=\"header-content-inner\">\n                        <h1 i18n>Recibe notificaciones cuando tus productos bajen de precio.</h1>\n                        <a href=\"app#download\" class=\"btn btn-outline btn-xl page-scroll\">Empieza a ahorrar</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-sm-5\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device main\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" itemprop=\"screenshot\" src=\"../assets/img/demo-screen-rayo.png\" class=\"img-responsive\" alt=\"\"/>\n                            </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </header>\n  \n  \n  <span itemref=\"_name1\"></span><section id=\"download\" class=\"download bg-primary text-center\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-8 col-md-offset-2\">\n                <h2 class=\"section-heading\">No tenemos sueños baratos.</h2>\n                <p>Hasta que bajan de precio.</p>\n                <div class=\"badges\">\n                    <a itemprop=\"downloadUrl\" itemprop=\"downloadUrl\" class=\"badge-link\" href=\"http://itunes.apple.com/es/app/salva-lista-tus-deseos.-sigue/id1156149609?l=es&mt=8&ct=landing\" target=\"_blank\"><img src=\"../assets/img/app-store-badge.svg\" alt=\"\"/></a>\n                    <a itemprop=\"downloadUrl\" class=\"badge-link\" href=\"https://play.google.com/store/apps/details?id=es.salva.notifier\" target=\"_blank\"><img src=\"../assets/img/google-play-badge.svg\" alt=\"\"/></a>\n                </div>\n            </div>\n        </div>\n    </div>\n  </section>\n  <section id=\"features\" class=\"features\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-12 text-center\">\n                <div class=\"section-heading\">\n                    <h2>Nada nos importa más que tus deseos.</h2>\n                    <p class=\"text-muted\">Añade tu lista de deseos con un sólo click. Disponible en \n                        <span itemprop=\"operatingSystem\" itemtype=\"http://schema.org/OperatingSystem\">iOS</span> y <span itemprop=\"operatingSystem\" itemtype=\"http://schema.org/OperatingSystem\">Android</span>Android.\n                    </p>\n                    <hr/>\n                </div>\n            </div>\n        </div>\n        <div style=\"display:none;\">\n            <span id=\"_name12\" itemprop=\"aggregateRating\" itemtype=\"http://schema.org/AggregateRating\"></span>\n            <span id=\"_name13\" itemprop=\"applicationCategory\" itemtype=\"http://schema.org/ApplicationCategory\"></span>\n            <span id=\"_name14\" itemprop=\"offers\" itemtype=\"http://schema.org/Offers\"></span>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <div class=\"device-container\">\n                    <div class=\"device-mockup iphone6_plus portrait white\">\n                        <div class=\"device\">\n                            <div class=\"screen\">\n                                <!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n                                <img itemprop=\"screenshot\" src=\"../assets/img/demo-screen.png\" class=\"img-responsive\" alt=\"\"/> </div>\n                            <div class=\"button\">\n                                <!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-8\">\n                <div class=\"container-fluid\">\n                    <div class=\"row\">\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-pencil text-primary\"></i>\n                                <h3>Listar</h3>\n                                <p class=\"text-muted\">Guarda tu lista de deseos y descubre cuando bajan o suben de precio. Descubre ofertas que otros usuarios han encontrado y aprovéchalas por tiempo limitado.</p>\n                            </div>\n                        </div>\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-tag text-primary\"></i>\n                                <h3>Seguir</h3>\n                                <p class=\"text-muted\">En ocasiones, las ofertas duran muy poco tiempo o se producen descuentos increíbles en unidades limitadas.</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-cloud-upload text-primary\"></i>\n                                <h3>Importar</h3>\n                                <p class=\"text-muted\">Importa tu lista de deseos con un solo click y averigua al instante si baja de precio para comprar en el mejor momento.</p>\n                            </div>\n                        </div>\n                        <div class=\"col-md-6\">\n                            <div class=\"feature-item\">\n                                <i class=\"icon-wallet text-primary\"></i>\n                                <h3>Comprar</h3>\n                                <p class=\"text-muted\">Recibe notificaciones push cuando baje o suba de precio y no te pierdas ninguna. Notificaciones que llegan realmente rápido.</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </section>\n  <section id=\"salvaeuristas\" class=\"salvaeuristas\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-4 text-center\">\n                <img src=\"../assets/img/salvaeuristas_badge.png\" alt=\"\"/>\n            </div>\n            <div class=\"col-md-8 text-center\">\n                <div class=\"container-fluid\">\n                    <div class=\"row\">\n                        <!-- Begin MailChimp Signup Form -->\n                        <div id=\"mc_embed_signup\">\n                        <form action=\"//fedegarlo.us14.list-manage.com/subscribe/post?u=b9021cafb46d6c2efc44bc0c9&amp;id=7b5b399867\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\">\n                            <div id=\"mc_embed_signup_scroll\">\n                            <h2>Únete a Salvaeuristas y recibe nuestro boletín</h2>\n                        <div class=\"mc-field-group\">\n                            <label style=\"display:none\" for=\"mce-EMAIL\">Email Address </label>\n                            <input placeholder=\"Correo electrónico\" type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" size=\"40\" required>\n                        </div>\n                            <div id=\"mce-responses\" class=\"clear\">\n                                <div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n                                <div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n                            <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_b9021cafb46d6c2efc44bc0c9_7b5b399867\" tabindex=\"-1\" value=\"\"></div>\n                            <div class=\"enviar\"><input type=\"submit\" value=\"Suscríbete\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"btn-style\"></div>\n                            </div>\n                        </form>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  </section>\n  <section class=\"cta\">\n    <div class=\"cta-content\">\n        <div class=\"container\">\n            <h2>No esperes más.<br/>Ahorra.</h2>\n            <a href=\"app#download\" class=\"btn btn-outline btn-xl page-scroll\">Consigue Salva</a>\n        </div>\n    </div>\n    <div class=\"overlay\"></div>\n  </section>\n  "
 
 /***/ }),
 
@@ -722,12 +728,20 @@ var HeroService = (function () {
         this.http = http;
         this.messageService = messageService;
         this.heroesUrl = 'http://salva-api.com/items'; // URL to web api
+        this.salvaUrl = 'http://salva-api.com'; // URL to web api
     }
     /** GET heroes from the server */
     HeroService.prototype.getHeroes = function () {
         var _this = this;
         return this.http.get(this.heroesUrl)
             .pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["c" /* tap */])(function (heroes) { return _this.log("fetched heroes"); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('getHeroes', [])));
+    };
+    HeroService.prototype.sendMail = function (email) {
+        return this.http.post(this.salvaUrl + "/recover", {
+            email: email
+        }, {
+            headers: httpOptions.headers
+        });
     };
     /** GET hero by id. Return `undefined` when id not found */
     HeroService.prototype.getHeroNo404 = function (id) {
@@ -947,6 +961,79 @@ var PrivacyComponent = (function () {
         __metadata("design:paramtypes", [])
     ], PrivacyComponent);
     return PrivacyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/recover/recover.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "input {\n    border: 1px black solid;\n}\n\n.logo {\n    text-align: center;\n}\n\n.logo img {\n    width: 200px;\n}\n\np.link {\n    margin-top: 10px;\n    font-size: 12px;\n}\n\nform {\n    margin-top: 10px; \n}\n\nh2 {\n    font-size: 18px;\n    margin-top: 10px;\n    font-weight: 400;\n}\n\n.message {\n    text-align: center;\n    border: 1px solid #eee;\n    padding: 14px;\n    background-color: #efefef;\n}\n\n.message h2 {\n    font-size: 20px;\n    font-weight: bold;\n}"
+
+/***/ }),
+
+/***/ "./src/app/recover/recover.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-12\">\n\t\t\t\t<div class=\"logo\">\n\t\t\t\t\t<img src=\"/assets/img/salva_logo_blue.png\" alt=\"\" />\n\t\t\t\t</div>\n\t\t\t\t<div *ngIf=\"!message.message\">\n\t\t\t\t\t<h2>Recuperar contraseña</h2>\n\t\t\t\t\t<form action=\".\" (submit)=\"sendMail()\">\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"email\">Tu dirección de email</label>\n\t\t\t\t\t\t\t<input class=\"form-control\" id=\"email\" name=\"email\" type=\"email\" required [(ngModel)]=\"email\" [pattern]=\"emailPattern\"/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<button class=\"btn btn-primary btn-lg btn-block\">Enviar</button>\n\t\t\t\t\t</form>\n\t\t\t\t\t<p class=\"link\">\n\t\t\t\t\t\t¿Aún no tienes cuenta? <a target=\"_blank\" href=\"http://www.getsalva.com\">Descarga nuestra aplicación</a>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"message\" *ngIf=\"message.message\">\n\t\t\t\t\t<h2>Revisa tu correo</h2>\n\t\t\t\t\t<p>Acabamos de enviar un email a <strong>{{ this.email }}</strong> con las instrucciones para cambiar tu contraseña. Revisa también la carpeta de spam.</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"message error\" *ngIf=\"error.message\">\n\t\t\t\t\t<h2>Email no válido</h2>\n\t\t\t\t\t<p>{{error.message}}</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n  "
+
+/***/ }),
+
+/***/ "./src/app/recover/recover.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecoverComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RecoverComponent = (function () {
+    function RecoverComponent(heroService) {
+        this.heroService = heroService;
+        this.message = {};
+        this.error = {};
+        this.email = '';
+        this.emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+    }
+    RecoverComponent.prototype.ngOnInit = function () {
+    };
+    RecoverComponent.prototype.sendMail = function () {
+        var _this = this;
+        this.error = {};
+        if (this.validateEmail(this.email)) {
+            this.heroService.sendMail(this.email).subscribe(function (response) {
+                _this.message = response;
+            });
+        }
+        else {
+            this.error.message = 'Por favor, introduzca una dirección de correo electrónico válida.';
+        }
+    };
+    RecoverComponent.prototype.validateEmail = function (email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    };
+    RecoverComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-recover',
+            template: __webpack_require__("./src/app/recover/recover.component.html"),
+            styles: [__webpack_require__("./src/app/recover/recover.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__hero_service__["a" /* HeroService */]])
+    ], RecoverComponent);
+    return RecoverComponent;
 }());
 
 
