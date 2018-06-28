@@ -232,7 +232,7 @@ module.exports = "input {\n    border: 1px black solid;\n}\n\n.logo {\n    text-
 /***/ "./src/app/auth/auth.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-12\">\n\t\t\t\t<div class=\"logo\">\n\t\t\t\t\t<img src=\"/assets/img/salva_logo_box.png\" alt=\"\" />\n\t\t\t\t\t<h2>Iniciar sesión en Salva</h2>\n\t\t\t\t</div>\n\t\t\t\t<form #form method=\"POST\" enctype=\"application/x-www-form-urlencoded\" action=\"http://salva-api.com/oauth\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user\">Usuario</label>\n\t\t\t\t\t\t<input class=\"form-control\" id=\"user\" name=\"username\" type=\"text\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"pass\">Password</label>\n\t\t\t\t\t\t<input class=\"form-control\" id=\"pass\" name=\"password\" type=\"password\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"client_id\" [(ngModel)]=\"CLIENT_ID\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"redirect_uri\" [(ngModel)]=\"REDIRECT_URI\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"state\" [(ngModel)]=\"STATE\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"response_type\" [(ngModel)]=\"RESPONSE_TYPE\">\n\t\t\t\t\t\t<button type=\"submit\" (click)=\"form.submit()\" class=\"btn btn-primary btn-lg btn-block\">Enviar</button>\n\t\t\t\t</form>\n\t\t\t\t<p class=\"link\">\n\t\t\t\t\t¿Aún no tienes cuenta? <a target=\"_blank\" href=\"http://www.getsalva.com\">Descarga nuestra aplicación</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n  "
+module.exports = "<section>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-12\">\n\t\t\t\t<div class=\"logo\">\n\t\t\t\t\t<img src=\"/assets/img/salva_logo_box.png\" alt=\"\" />\n\t\t\t\t\t<h2>Iniciar sesión en Salva</h2>\n\t\t\t\t</div>\n\t\t\t\t<form #form method=\"POST\" enctype=\"application/x-www-form-urlencoded\" action=\"https://salva-api.appspot.com/oauth\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user\">Usuario</label>\n\t\t\t\t\t\t<input class=\"form-control\" id=\"user\" name=\"username\" type=\"text\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"pass\">Password</label>\n\t\t\t\t\t\t<input class=\"form-control\" id=\"pass\" name=\"password\" type=\"password\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"client_id\" [(ngModel)]=\"CLIENT_ID\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"redirect_uri\" [(ngModel)]=\"REDIRECT_URI\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"state\" [(ngModel)]=\"STATE\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"response_type\" [(ngModel)]=\"RESPONSE_TYPE\">\n\t\t\t\t\t\t<button type=\"submit\" (click)=\"form.submit()\" class=\"btn btn-primary btn-lg btn-block\">Enviar</button>\n\t\t\t\t</form>\n\t\t\t\t<p class=\"link\">\n\t\t\t\t\t¿Aún no tienes cuenta? <a target=\"_blank\" href=\"http://www.getsalva.com\">Descarga nuestra aplicación</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n  "
 
 /***/ }),
 
@@ -727,8 +727,8 @@ var HeroService = (function () {
     function HeroService(http, messageService) {
         this.http = http;
         this.messageService = messageService;
-        this.heroesUrl = 'http://salva-api.com/items'; // URL to web api
-        this.salvaUrl = 'http://salva-api.com'; // URL to web api
+        this.heroesUrl = 'https://salva-api.appspot.com/items'; // URL to web api
+        this.salvaUrl = 'https://salva-api.appspot.com'; // URL to web api
     }
     /** GET heroes from the server */
     HeroService.prototype.getHeroes = function () {
