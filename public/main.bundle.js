@@ -35,12 +35,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__ = __webpack_require__("./src/app/eula/eula.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__ = __webpack_require__("./src/app/recover/recover.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__reset_reset_component__ = __webpack_require__("./src/app/reset/reset.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -63,6 +65,7 @@ var routes = [
     { path: 'privacy', component: __WEBPACK_IMPORTED_MODULE_5__privacy_privacy_component__["a" /* PrivacyComponent */] },
     { path: 'privacidad', component: __WEBPACK_IMPORTED_MODULE_6__privacidad_privacidad_component__["a" /* PrivacidadComponent */] },
     { path: 'product/:id', component: __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */] },
+    { path: 'reset/:token', component: __WEBPACK_IMPORTED_MODULE_13__reset_reset_component__["a" /* ResetComponent */] },
     { path: 'app', component: __WEBPACK_IMPORTED_MODULE_9__get_app_get_app_component__["a" /* GetAppComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: 'eula', component: __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__["a" /* EulaComponent */] },
@@ -156,12 +159,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__reset_reset_component__ = __webpack_require__("./src/app/reset/reset.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -203,7 +208,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__get_app_get_app_component__["a" /* GetAppComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__["a" /* EulaComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__["a" /* AuthComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__recover_recover_component__["a" /* RecoverComponent */]
+                __WEBPACK_IMPORTED_MODULE_14__recover_recover_component__["a" /* RecoverComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__reset_reset_component__["a" /* ResetComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -743,6 +749,11 @@ var HeroService = (function () {
             headers: httpOptions.headers
         });
     };
+    HeroService.prototype.resetPassword = function (form) {
+        return this.http.post(this.salvaUrl + "/changepassword", form, {
+            headers: httpOptions.headers
+        });
+    };
     /** GET hero by id. Return `undefined` when id not found */
     HeroService.prototype.getHeroNo404 = function (id) {
         var _this = this;
@@ -1034,6 +1045,97 @@ var RecoverComponent = (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__hero_service__["a" /* HeroService */]])
     ], RecoverComponent);
     return RecoverComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/reset/reset.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "input {\n  border: 1px black solid;\n}\n\n.logo {\n  text-align: center;\n}\n\n.logo img {\n  width: 200px;\n}\n\np.link {\n  margin-top: 10px;\n  font-size: 12px;\n}\n\nform {\n  margin-top: 10px; \n}\n\nh2 {\n  font-size: 18px;\n  margin-top: 10px;\n  font-weight: 400;\n}\n\n.message {\n  text-align: center;\n  border: 1px solid #eee;\n  padding: 14px;\n  background-color: #efefef;\n}\n\n.message h2 {\n  font-size: 20px;\n  font-weight: bold;\n}"
+
+/***/ }),
+
+/***/ "./src/app/reset/reset.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-12\">\n\t\t\t\t<div class=\"logo\">\n\t\t\t\t\t<img src=\"/assets/img/salva_logo_blue.png\" alt=\"\" />\n\t\t\t\t</div>\n\t\t\t\t<div *ngIf=\"!message.message\">\n\t\t\t\t\t<h2>Recuperar contraseña</h2>\n\t\t\t\t\t<form action=\".\" (submit)=\"reset()\">\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"password1\">Escribe la nueva contraseña</label>\n\t\t\t\t\t\t\t<input class=\"form-control\" id=\"password1\" name=\"password1\" autocomplete=\"new-password\" type=\"password\" required [(ngModel)]=\"password1\"/>\n            </div>\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"password2\">Repite la contraseña</label>\n\t\t\t\t\t\t\t<input class=\"form-control\" id=\"password2\" name=\"password2\" autocomplete=\"new-password\" type=\"password\" required [(ngModel)]=\"password2\"/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<button class=\"btn btn-primary btn-lg btn-block\">Enviar</button>\n\t\t\t\t\t</form>\n\t\t\t\t\t<p class=\"link\">\n\t\t\t\t\t\t¿Aún no tienes cuenta? <a target=\"_blank\" href=\"http://www.getsalva.com\">Descarga nuestra aplicación</a>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"message\" *ngIf=\"message.message\">\n\t\t\t\t\t<h2>Enhorabuena</h2>\n\t\t\t\t\t<p>Utiliza tu nueva contraseña en tu próximo acceso a Salva.</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"message error\" *ngIf=\"error.message\">\n\t\t\t\t\t<h2>Error</h2>\n\t\t\t\t\t<p>{{error.message}}</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n  "
+
+/***/ }),
+
+/***/ "./src/app/reset/reset.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ResetComponent = (function () {
+    function ResetComponent(route, heroService) {
+        this.route = route;
+        this.heroService = heroService;
+        this.message = {};
+        this.error = {};
+        this.password1 = '';
+        this.password2 = '';
+        this.token = '';
+    }
+    ResetComponent.prototype.ngOnInit = function () {
+        this.getToken();
+    };
+    ResetComponent.prototype.getToken = function () {
+        this.token = this.route.snapshot.paramMap.get('token');
+        console.log(this.token);
+    };
+    ResetComponent.prototype.reset = function () {
+        var _this = this;
+        var form = {
+            password1: this.password1,
+            password2: this.password2,
+            token: this.token
+        };
+        this.error = {};
+        if (this.password1.length === 0) {
+            this.error.message = 'Por favor, introduce una contraseña.';
+        }
+        else {
+            if (this.password1 === this.password2) {
+                this.heroService.resetPassword(form).subscribe(function (response) {
+                    _this.message = response;
+                }, function (error) {
+                    _this.error.message = 'Se ha producido un error inesperado.';
+                });
+            }
+            else {
+                this.error.message = 'Las contraseñas no coinciden.';
+            }
+        }
+    };
+    ResetComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-reset',
+            template: __webpack_require__("./src/app/reset/reset.component.html"),
+            styles: [__webpack_require__("./src/app/reset/reset.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_2__hero_service__["a" /* HeroService */]])
+    ], ResetComponent);
+    return ResetComponent;
 }());
 
 
