@@ -70,8 +70,7 @@ var routes = [
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: 'eula', component: __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__["a" /* EulaComponent */] },
     { path: 'auth', component: __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__["a" /* AuthComponent */] },
-    { path: 'recover', component: __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__["a" /* RecoverComponent */] },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
+    { path: 'recover', component: __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__["a" /* RecoverComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

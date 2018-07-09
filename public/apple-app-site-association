@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "com.fedegarlo.salva",
+                "paths": [ "/product/*","/social","/search","/discover","/profile"]
+            }
+        ]
+    }
+}
