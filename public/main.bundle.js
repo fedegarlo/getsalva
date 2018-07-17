@@ -36,12 +36,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__ = __webpack_require__("./src/app/recover/recover.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__reset_reset_component__ = __webpack_require__("./src/app/reset/reset.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shortcuts_shortcuts_component__ = __webpack_require__("./src/app/shortcuts/shortcuts.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -71,6 +73,7 @@ var routes = [
     { path: 'eula', component: __WEBPACK_IMPORTED_MODULE_10__eula_eula_component__["a" /* EulaComponent */] },
     { path: 'auth', component: __WEBPACK_IMPORTED_MODULE_11__auth_auth_component__["a" /* AuthComponent */] },
     { path: 'recover', component: __WEBPACK_IMPORTED_MODULE_12__recover_recover_component__["a" /* RecoverComponent */] },
+    { path: 'shortcuts', component: __WEBPACK_IMPORTED_MODULE_14__shortcuts_shortcuts_component__["a" /* ShortcutsComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */] }
 ];
 var AppRoutingModule = (function () {
@@ -154,12 +157,13 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__ = __webpack_require__("./src/app/eula/eula.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recover_recover_component__ = __webpack_require__("./src/app/recover/recover.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__message_service__ = __webpack_require__("./src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__reset_reset_component__ = __webpack_require__("./src/app/reset/reset.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shortcuts_shortcuts_component__ = __webpack_require__("./src/app/shortcuts/shortcuts.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__message_service__ = __webpack_require__("./src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__reset_reset_component__ = __webpack_require__("./src/app/reset/reset.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -188,7 +192,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_18__environments_environment__["a" /* environment */].production) {
+
+if (__WEBPACK_IMPORTED_MODULE_19__environments_environment__["a" /* environment */].production) {
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* enableProdMode */])();
 }
 var AppModule = (function () {
@@ -209,15 +214,16 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_12__eula_eula_component__["a" /* EulaComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__auth_auth_component__["a" /* AuthComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__recover_recover_component__["a" /* RecoverComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__reset_reset_component__["a" /* ResetComponent */]
+                __WEBPACK_IMPORTED_MODULE_15__shortcuts_shortcuts_component__["a" /* ShortcutsComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__reset_reset_component__["a" /* ResetComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_19__angular_forms__["a" /* FormsModule */]
+                __WEBPACK_IMPORTED_MODULE_18__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_20__angular_forms__["a" /* FormsModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_15__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_16__message_service__["a" /* MessageService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_16__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_17__message_service__["a" /* MessageService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -1136,6 +1142,56 @@ var ResetComponent = (function () {
             __WEBPACK_IMPORTED_MODULE_2__hero_service__["a" /* HeroService */]])
     ], ResetComponent);
     return ResetComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shortcuts/shortcuts.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/shortcuts/shortcuts.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"features\" class=\"features\">\n\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-lg-12 text-center\">\n\t\t\t\t\t\t\t<div class=\"section-heading\">\n\t\t\t\t\t\t\t\t\t<h2>Shortcuts.</h2>\n\t\t\t\t\t\t\t\t\t<p class=\"text-muted\">Funciones rápidas relacionadas con Salva y disponibles en\n\t\t\t\t\t\t\t\t\t\t\t<span itemprop=\"operatingSystem\" itemtype=\"http://schema.org/OperatingSystem\">iOS</span> 12.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<hr/>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div style=\"display:none;\">\n\t\t\t\t\t<span id=\"_name12\" itemprop=\"aggregateRating\" itemtype=\"http://schema.org/AggregateRating\"></span>\n\t\t\t\t\t<span id=\"_name13\" itemprop=\"applicationCategory\" itemtype=\"http://schema.org/ApplicationCategory\"></span>\n\t\t\t\t\t<span id=\"_name14\" itemprop=\"offers\" itemtype=\"http://schema.org/Offers\"></span>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"feature-item\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"icon-tag text-primary\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h3>Últimas ofertas</h3>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"text-muted\">Accede directamente a las últimas ofertas y tendencias de Salva.</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-xl\" href=\"../assets/files/last_offers.shortcut\" download=\"last_offers.shortcut\">Instalar</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"feature-item\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"icon-clock text-primary\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h3>Próximamente</h3>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"text-muted\">Atento a nuevos shortcuts que iremos publicando muy pronto.</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-primary disabled btn-xl\" href=\"../assets/files/last_offers.shortcut\" download=\"last_offers.shortcut\">Instalar</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t<div class=\"device-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"device-mockup iphone6_plus portrait white\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"device\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"screen\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--   Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!   -->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img itemprop=\"screenshot\" src=\"../assets/img/demo-screen-rayo.png\" class=\"img-responsive\" alt=\"\"/> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"button\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--   You can hook the \"home button\" to some JavaScript events or just remove it   -->\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t</div>\n\t</div>\n</section>\n  "
+
+/***/ }),
+
+/***/ "./src/app/shortcuts/shortcuts.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShortcutsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ShortcutsComponent = (function () {
+    function ShortcutsComponent() {
+    }
+    ShortcutsComponent.prototype.ngOnInit = function () {
+    };
+    ShortcutsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'shortcuts',
+            template: __webpack_require__("./src/app/shortcuts/shortcuts.component.html"),
+            styles: [__webpack_require__("./src/app/shortcuts/shortcuts.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ShortcutsComponent);
+    return ShortcutsComponent;
 }());
 
 
