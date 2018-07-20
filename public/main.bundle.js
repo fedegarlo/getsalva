@@ -1168,6 +1168,7 @@ module.exports = "<section id=\"features\" class=\"features\">\n\t<div class=\"c
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShortcutsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1178,10 +1179,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ShortcutsComponent = (function () {
-    function ShortcutsComponent() {
+    function ShortcutsComponent(meta, title) {
+        this.meta = meta;
+        this.title = title;
     }
     ShortcutsComponent.prototype.ngOnInit = function () {
+        var title = 'Shortcuts para utilizar con Salva';
+        var description = 'Funciones rápidas relacionadas con Salva y disponibles en iOS 12.';
+        this.meta.updateTag({ name: 'description', content: description });
+        this.meta.updateTag({ property: "og:image", content: "./assets/img/shortcuts.png" });
+        this.meta.updateTag({ property: "og:url", content: "https://www.getsalva.com/shortcuts" });
+        this.meta.updateTag({ property: "og:title", content: title });
+        this.meta.updateTag({ property: "og:description", content: description });
+        this.title.setTitle(title);
     };
     ShortcutsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1189,7 +1201,8 @@ var ShortcutsComponent = (function () {
             template: __webpack_require__("./src/app/shortcuts/shortcuts.component.html"),
             styles: [__webpack_require__("./src/app/shortcuts/shortcuts.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* Meta */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["d" /* Title */]])
     ], ShortcutsComponent);
     return ShortcutsComponent;
 }());
