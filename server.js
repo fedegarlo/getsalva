@@ -15,6 +15,17 @@ app.configure(function() {
     app.use(express.static(path.join(__dirname, 'public'), { maxAge: cacheTime }));
 });
 
+app.use(function(req,res,next) { var ua = req.headers['user-agent'];
+  if (req.path === '/shortcuts') {
+    if (/^(facebookexternalhit)|(Twitterbot)|(Pinterest)|(Applebot)/gi.test(ua)) {
+			console.log(ua,' is a bot');
+		}
+		res.sendfile(__dirname + '/public/shortcuts.html');
+	} else {
+		next();
+	}
+});
+
 app.use((req, res)=>res.sendfile(__dirname + '/public/index.html'));
 
 server.listen(port, ipaddress);
