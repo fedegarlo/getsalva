@@ -16,11 +16,13 @@ app.configure(function() {
 });
 
 app.use(function(req,res,next) { var ua = req.headers['user-agent'];
-  if (req.path === '/shortcuts') {
-    if (/^(facebookexternalhit)|(Twitterbot)|(Pinterest)|(Applebot)/gi.test(ua)) {
+	if (/^(facebookexternalhit)|(Twitterbot)|(Pinterest)|(Applebot)/gi.test(ua)) {
+		if (req.path === '/shortcuts') {
 			console.log(ua,' is a bot');
+			res.sendfile(__dirname + '/public/shortcuts.html');
+		} else {
+			next();
 		}
-		res.sendfile(__dirname + '/public/shortcuts.html');
 	} else {
 		next();
 	}
