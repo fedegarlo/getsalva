@@ -6,7 +6,15 @@ var ipaddress = process.env.HOST || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
     app      = express(),
     path = require('path'),
     http = require('http'),
-    server = http.createServer(app);
+		server = http.createServer(app),
+		seoRoutes = [
+			'/shortcuts',
+			'/fastpass'
+		],
+		seoPages = [
+			'shortcuts.html',
+			'fastpass.html'
+		];
 
 app.configure(function() {
     var cacheTime = 0;
@@ -15,11 +23,14 @@ app.configure(function() {
     app.use(express.static(path.join(__dirname, 'public'), { maxAge: cacheTime }));
 });
 
-app.use(function(req,res,next) { var ua = req.headers['user-agent'];
+app.use(function(req,res,next) {
+	var ua = req.headers['user-agent'],
+			seoIndex;
 	if (/^(facebookexternalhit)|(Twitterbot)|(Pinterest)|(Applebot)/gi.test(ua)) {
-		if (req.path === '/shortcuts') {
+		seoIndex = seoRoutes.indexOf(req.path);
+		if (seoIndex !== -1) {
 			console.log(ua,' is a bot');
-			res.sendfile(__dirname + '/public/shortcuts.html');
+			res.sendfile(__dirname + '/public/' + seoPages[seoIndex]);
 		} else {
 			next();
 		}
