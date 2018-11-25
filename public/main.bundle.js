@@ -739,8 +739,8 @@ var HeroService = (function () {
     function HeroService(http, messageService) {
         this.http = http;
         this.messageService = messageService;
-        this.heroesUrl = 'https://salva-api.appspot.com/items'; // URL to web api
-        this.salvaUrl = 'https://salva-api.appspot.com'; // URL to web api
+        this.heroesUrl = 'https://salva-api.herokuapp.com/items'; // URL to web api
+        this.salvaUrl = 'https://salva-api.herokuapp.com'; // URL to web api
     }
     /** GET heroes from the server */
     HeroService.prototype.getHeroes = function () {
