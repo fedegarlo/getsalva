@@ -1,11 +1,11 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "com.fedegarlo.chat",
-                "paths": [ "/chat/*" ]
-            }
-        ]
-    }
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "HSL8ATRC8B.com.fedegarlo.chat",
+        "paths": [ "/chats/*" ]
+      }
+    ]
+  }
 }
