@@ -3,8 +3,8 @@
         "apps": [],
         "details": [
             {
-                "appID": "com.fedegarlo.salva",
-                "paths": [ "/product/*","/social","/search","/discover","/profile"]
+                "appID": "com.fedegarlo.chat",
+                "paths": [ "/chat/*" ]
             }
         ]
     }
