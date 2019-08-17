@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "HSL8ATRC8B.com.fedegarlo.chat",
-        "paths": [ "/chats/*" ]
+        "paths": [ "/chat/*" ]
       }
     ]
   }
