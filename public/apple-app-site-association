@@ -1,13 +1,7 @@
 {
-    "applinks": {
-        "details": [
-            {
-                "appIDs": ["HSL8ATRC8B.com.fedegarlo.salva"],
-                "components": []
-            }
-        ]
-    },
-	"webcredentials": {
-"apps": ["HSL8ATRC8B.com.fedegarlo.salva"]
-}
+   "webcredentials":{
+      "apps":[
+         "HSL8ATRC8B.com.fedegarlo.salva"
+      ]
+   }
 }
