@@ -1,11 +1,13 @@
 {
     "applinks": {
-        "apps": [],
         "details": [
             {
-                "appID": "com.fedegarlo.salva",
-                "paths": [ "/product/*","/social","/search","/discover","/profile"]
+                "appIDs": ["HSL8ATRC8B.com.fedegarlo.salva"],
+                "components": []
             }
         ]
-    }
+    },
+	"webcredentials": {
+"apps": ["HSL8ATRC8B.com.fedegarlo.salva"]
+}
 }
